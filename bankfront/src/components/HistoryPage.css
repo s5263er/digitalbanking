@@ -1,0 +1,47 @@
+.app-bar {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .squares-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  
+
+  .square {
+  width: 300px;
+  height: 300px;
+  background-color: #fff !important; /* White background */
+  color: #000 !important; /* Black text */
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, background-color 0.3s;
+  text-align: center; /* Center-align text */
+}
+
+.square:hover {
+  transform: translateY(-5px);
+  background-color: #000 !important; /* Black background on hover */
+  color: #fff !important; /* White text on hover */
+}
+
+.square:hover img {
+  filter: brightness(0) invert(1); /* Invert the logo to make it white on hover */
+}
+
+.square img {
+  width: 60px; /* Adjust logo size */
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+  

@@ -1,0 +1,93 @@
+/* styles.css */
+
+/* Header */
+.app-bar {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #333; /* Change the background color to your preference */
+    color: #fff; /* Text color */
+  }
+  
+  /* Container for transfer items */
+  .table-container {
+    display: flex;
+    flex-direction: column; /* Display items in a column layout */
+    gap: 20px; /* Small margin between items */
+    margin-top: 20px;
+  }
+  
+  /* Individual transfer item */
+  .transfer-table {
+    width: 100%; /* Full width */
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center; /* Center-align text */
+    margin-bottom: 20px; /* Small margin between items */
+    border-collapse: collapse; /* Collapse borders between cells */
+  }
+  
+  .transfer-table th,
+  .transfer-table td {
+    padding: 10px; /* Padding for table cells */
+    border-bottom: 1px solid #ccc; /* Add a bottom border for separation */
+  }
+  
+  .transfer-table th {
+    background-color: #f8f8f8; /* Header background color */
+  }
+  
+  /* Styling for filter options */
+  .filter-options {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    text-align: center; /* Center-align text within the container */
+  }
+  
+  .filter-options select,
+  .filter-options input[type="date"],
+  .filter-options input[type="number"] {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #000; /* Change text color to black */
+  }  
+  .filter-options button {
+    padding: 5px 10px;
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .filter-options button:hover {
+    background-color: #005a9c;
+  }
+  
+  /* Styling for filter buttons (incoming/outgoing) */
+  .filter-options button[type="button"] {
+    background-color: #ccc;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .filter-options button[type="button"]:hover {
+    background-color: #007acc;
+    color: #fff;
+  }
+  
+  /* Responsive styling for small screens */
+  @media screen and (max-width: 600px) {
+    .transfer-table {
+      width: 100%;
+    }
+  }
+  

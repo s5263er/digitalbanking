@@ -1,0 +1,71 @@
+/* TransferPage.css */
+
+.transfer-page {
+  display: flex;
+  justify-content: space-around; /* Horizontally space elements */
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #000, #111);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.balance-widget,
+.transfer-form {
+  width: 22%; /* Adjust the width as needed */
+  background-color: #333;
+  border-radius: 12px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.balance-widget h2,
+.transfer-form h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 75%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #009688;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #007a6d;
+}
+
+a {
+  margin-top: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

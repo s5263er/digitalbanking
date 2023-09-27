@@ -1,0 +1,181 @@
+/* StocksPage.css */
+
+/* Container styles */
+.stocks-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Background color for the entire page */
+    min-height: 100vh; /* Ensure the page covers the full viewport height */
+  }
+  
+  .page-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .stock-chart {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+  }
+  
+  
+  
+  
+  .toggle-buttons {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    width: 100%; /* Take full width */
+    margin-bottom: 10px; /* Reduce margin to separate from chart */
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  
+  .toggle-button {
+    background-color: gray; /* Default color for inactive buttons */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px; /* Add margin between buttons */
+  }
+  
+  .toggle-button.active-green {
+    background-color: green; /* Green for active Buy button */
+  }
+  
+  .toggle-button.active-red {
+    background-color: red; /* Red for active Sell button */
+  }
+  
+  
+  
+  .financial-metrics {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  
+  /* Metric box styles */
+  .metric-box {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the boxes */
+  }
+  
+  .metric-box:hover .metric-info {
+    display: block;
+  }
+  
+  .metric-label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .metric-value {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  
+  
+  /* Recommendation styles */
+  .recommendations {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .recommendation {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 18%;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the recommendations */
+    transition: transform 0.2s; /* Add a smooth transition effect */
+  }
+  
+  .recommendation:hover {
+    transform: scale(1.05); /* Enlarge the box slightly on hover */
+  }
+  
+  /* Buy and Sell styles */
+  .buy-sell-section {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    margin-bottom: 20px;
+  }
+  
+  .buy-section,
+  .sell-section {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 48%; /* Adjust the width to your preference */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  }
+  
+  input[type="number"] {
+    width: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .chart-and-controls {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; /* Horizontally align items */
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  
+  .buy-sell-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    flex-basis: 20%; /* Adjust the width to your preference */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .numeric-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .send-order-button {
+    margin-top: 10px;
+  }

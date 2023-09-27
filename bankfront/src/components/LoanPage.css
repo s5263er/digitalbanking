@@ -1,0 +1,88 @@
+/* LoanPage.css */
+
+.loan-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #000, #111);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .balance-widget,
+  .loan-form {
+    width: 22%;
+    background-color: #333;
+    border-radius: 12px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  }
+  
+  .balance-widget h2,
+  .loan-form h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group label {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #009688;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #007a6d;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Add more custom styles as needed */
+  .table-container {
+    display: flex;
+    flex-direction: column; /* Display items in a column layout */
+    gap: 20px; /* Small margin between items */
+    margin-top: 20px;
+  }
+  
+  /* Individual transfer item */
+  .transfer-table {
+    width: 100%; /* Full width */
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center; /* Center-align text */
+    margin-bottom: 20px; /* Small margin between items */
+    border-collapse: collapse; /* Collapse borders between cells */
+  }

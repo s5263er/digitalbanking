@@ -1,0 +1,99 @@
+body {
+    background-color: #222; /* Dark grayish background color for the entire webpage */
+  }
+  
+  .stock-search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .stock-search-input {
+    width: 600px; /* Increase width for both search bar and results */
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #333; /* Dark background color */
+    font-size: 16px;
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+  }
+  
+  .stock-search-input::placeholder {
+    color: #ccc;
+  }
+  
+  .search-results {
+    width: 600px; /* Match the width of the search bar */
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #333; /* Dark background color for results */
+    border: 1px solid #1c7c89; /* Turquoise border color */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    color: #fff;
+    margin-top: 10px; /* Adjust the top margin */
+  }
+  
+  .search-results li:hover {
+    background-color: #1c7c89; /* Hover background color in turquoise */
+  }
+  
+  .news-container {
+    background-color: #fff; /* White background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding inside the container */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    display: flex;
+    flex-direction: column;;
+    width: 900px; /* Match the width of the search bar and results */
+    margin-bottom: 20px; /* Spacing between news containers */
+    background-color: #fff; /* Background color same as body */
+    color: #fff; /* Text color same as body */
+  }
+  
+  /* Add this style for spacing between news containers */
+  .news-container + .news-container {
+    margin-top: 20px;
+  }
+  
+  /* Title style */
+  .news-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000; /* Set the desired color for the news titles */
+  }
+  
+  /* Publication Date style */
+  .news-pubDate {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: right; /* Align to the top right */
+    color: #777; /* Light gray color for date */
+
+  }
+  
+  /* Source style */
+  .news-source {
+    font-size: 16px;
+    margin-top: auto; /* Push source to the bottom */
+    text-align: center; /* Center align the source */
+    color: #555; /* Medium gray color for source */
+  }
+  
+  /* Adjust margin-top for spacing between search results and news */
+  /* Style for the latest-news-container */
+.latest-news-container {
+    position: absolute; /* Position absolutely */
+    top: 200px; /* Adjust as needed */
+    left: 50%; /* Horizontally center within the parent */
+    transform: translateX(-50%); /* Center horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content horizontally */
+  }
+  
+  
